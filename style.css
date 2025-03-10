@@ -1,0 +1,202 @@
+:root {  
+    --color-primary: #FF85A2;  /* Rosa suave */
+    --color-secondary: #FFE6E6; /* Fondo pastel */
+    --color-tertiary: #FFB570;  /* Naranja claro */
+    --color-button: #7FD1B9;    /* Verde menta */
+    --color-button-hover: #59B3A2;
+    --color-text: #5A5A5A;
+    --color-white: #FFFFFF;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+    position: relative;
+}
+
+/* Imagen decorativa */
+.amigo-img {
+    width: 25%; 
+    position: absolute;
+    right: 5%;
+    top: 10%;
+}
+
+/* Sección de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    color: var(--color-white);
+}
+
+.section-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Entrada de texto y botón proporcionados */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 70%;
+    padding: 12px;
+    border: 2px solid var(--color-tertiary);
+    border-radius: 25px 0 0 25px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+}
+
+.button-add {
+    width: 30%;
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid #D76D31;
+}
+
+.button-add:hover {
+    background-color: #FF9A5B;
+    border-color: #d65725;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-size: 18px;
+    margin: 20px 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: #05DF05;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Botón sorteador y reinicio */
+.button-draw, .button-reset {
+    margin-top: 20px;
+    background-color: var(--color-button);
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 25px;
+    color: white;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+
+.button-draw:hover, .button-reset:hover {
+    background-color: var(--color-button-hover);
+    border-color: #222;
+}
+
+/* Estilos adicionales */
+.name-list button {
+    background-color: #FFB570;
+    border: none;
+    padding: 3px; /* Botón más pequeño */
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px; /* Tamaño de texto más pequeño */
+}
+
+.name-list button:hover {
+    background-color: darkorange;
+}
+
+/* Recuadro blanco para los nombres sorteados */
+.name-container {
+    background-color: var(--color-white);
+    padding: 15px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+/* Estilos para la franja lateral izquierda */
+.franja {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;  /* Ajusta el tamaño de la franja según lo necesites */
+    background-image: url('assets/franja.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;  /* La franja estará a la izquierda de la página */
+}
+
+/* Estilo para el nuevo botón */
+.button-ganador {
+    margin-top: 20px;
+    background-color: var(--color-button);
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 25px;
+    color: white;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+
+.button-ganador:hover {
+    background-color: var(--color-button-hover);
+    border-color: #222;
+}
+
