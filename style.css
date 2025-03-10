@@ -151,52 +151,38 @@ ul {
 .name-list button {
     background-color: #FFB570;
     border: none;
-    padding: 3px; /* Botón más pequeño */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
     cursor: pointer;
-    border-radius: 5px;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px; /* Tamaño de texto más pequeño */
+    font-size: 18px;
 }
 
 .name-list button:hover {
-    background-color: darkorange;
+    background-color: #FF9A5B;
 }
 
-/* Recuadro blanco para los nombres sorteados */
-.name-container {
-    background-color: var(--color-white);
-    padding: 15px;
-    border-radius: 10px;
-    width: fit-content;
+.input-wrapper {
+    margin-bottom: 20px;
 }
 
-/* Estilos para la franja lateral izquierda */
-.franja {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100px;  /* Ajusta el tamaño de la franja según lo necesites */
-    background-image: url('assets/franja.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    left: 0;  /* La franja estará a la izquierda de la página */
+.input-name::placeholder {
+    font-style: italic;
+    color: #A2A2A2;
 }
 
-/* Estilo para el nuevo botón */
 .button-ganador {
-    margin-top: 20px;
-    background-color: var(--color-button);
+    background-color: #7FD1B9;
     font-family: "Poppins", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     padding: 12px;
     border-radius: 25px;
     color: white;
     border: 2px solid #333;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .button-ganador:hover {
-    background-color: var(--color-button-hover);
-    border-color: #222;
+    background-color: #59B3A2;
 }
-
